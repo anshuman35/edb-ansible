@@ -1,5 +1,7 @@
 ---
-- hosts: localhost
+- hosts: localhost:8084
   remote_user: root
   roles:
     - edb.postgres.install
+    
+    ports:8080,8084
